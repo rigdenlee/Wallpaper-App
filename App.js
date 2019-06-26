@@ -91,7 +91,7 @@ class App extends React.Component {
   }
 
   loadWallpapers = () => {
-    axios.get('https://api.unsplash.com/photos/random?count=30&client_id=d8e8f998cc059cf8063b81db1029b36c5046fa6f898b80828224144714666052')
+    axios.get('https://api.unsplash.com/photos/random?count=30&client_id=---')
       .then(res => {
         this.setState({images: res.data, isLoading: false})
       })
